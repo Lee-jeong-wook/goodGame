@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/result.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div class="container">
+        <h3>당신의 유형은</h3>
+        <h4><%= results.typeDescription %></h4>
+        <h1><%= results.type %></h1>
+        <span class="description">
+            <h3>설명</h3>
+            <%= results.description %>
+        </span>
+        <div class="related">
+            <h3>관련 게임</h3>
+            <div class="gamesWrap">
+                <% for (const key in results.related) {  %>
+                    <div class="relatedGames">
+                        <%= results.related[key].name %>
+                        <a href=<%= results.related[key].url %>>
+                            <img src= <%= results.related[key].image %> >
+                        </a>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

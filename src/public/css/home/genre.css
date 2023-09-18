@@ -1,0 +1,63 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 900px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.question-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 3px 7px black;
+    height: 12%;
+}
+.question-contents{
+    width: 95%;
+    padding: 10px 0px;
+}
+.choice{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+}
+.choice label{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+}
+.choice .yes:has(input:checked){
+    background-color: #0d0;
+}
+.choice .no:has(input:checked){
+    background-color: #d00;
+}
+.choice > label > input{
+    display: none;
+}
+.yes::after{
+    content: '동의';
+    font-size: 12px;
+    position: relative;
+    top: -20px;
+    left: 5px;
+}
+.no::after{
+    content: '비동의';
+    font-size: 12px;
+    position: relative;
+    top: -20px;
+}
+.submitBtn{
+    width: 100px;
+}

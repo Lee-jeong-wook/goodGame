@@ -1,0 +1,118 @@
+{
+    "id":[
+        "fighter",
+        "warrior",
+        "brain",
+        "explorer",
+        "gamer"
+    ],
+    "type":[
+        "장인 전투광",
+        "돈 많은 전사",
+        "게임 속 제갈량",
+        "자유의 탐험가",
+        "라이트한 게이머"
+    ],
+    "typeDescription":[
+        "순도 100% 실력",
+        "게임은 장비빨!",
+        "머리를 써야 이길 수 있지!",
+        "현실에는 없는 곳을 자유롭게 탐험하고 싶어!",
+        "언제나 간단하게 즐기는 게임이 필요해"
+    ],
+    "description":[
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "related":{
+        "fighter":[
+            {
+                "name": "철권",
+                "url": "https://www.bandainamcoent.asia/ko-KR/games/tekken-8?id=masthead",
+                "image": "/images/takken.png"
+            },
+            {
+                "name": "배틀그라운드",
+                "url": "https://pubg.com/ko/",
+                "image": "/images/battle.png"
+            },
+            {
+                "name": "Wizard of Legend",
+                "url": "https://store.steampowered.com/app/445980/Wizard_of_Legend/ ",
+                "image": "/images/wizard.png"
+            }
+        ],
+        "warrior":[
+            {
+                "name": "피파온라인 4",
+                "url": "https://fifaonline4.nexon.com/main/index",
+                "image": "/images/fifa.png"
+            },
+            {
+                "name": "메이플스토리",
+                "url": "https://maplestory.nexon.com/",
+                "image": "/images/maple.png"
+            },
+            {
+                "name": "로스트아크",
+                "url": "https://lostark.game.onstove.com/Main",
+                "image": "/images/lostark.png"
+            },
+            {
+                "name": "아크 서바이벌",
+                "url": "https://store.steampowered.com/app/346110/ARK_Survival_Evolved/?l=koreana",
+                "image": "/images/ark.png"
+            }
+        ],
+        "brain":[
+            {
+                "name": "전략적 팀 전투",
+                "url": "https://teamfighttactics.leagueoflegends.com/ko-kr/",
+                "image": "/images/tft.png"
+            },
+            {
+                "name": "구스구스덕",
+                "url": "https://store.steampowered.com/app/1568590/Goose_Goose_Duck/",
+                "image": "/images/goose.png"
+            },
+            {
+                "name": "클래시로얄",
+                "url": "https://store.supercell.com/ko/game/clashroyale",
+                "image": "/images/clash.png"
+            }
+        ],
+        "explorer":[
+            {
+                "name": "엘든링",
+                "url": "https://store.steampowered.com/app/1245620/ELDEN_RING/?l=koreana&curator_clanid=27576459",
+                "image": "/images/elden.png"
+            },
+            {
+                "name": "알비온 온라인",
+                "url": "https://albiononline.com/home",
+                "image": "/images/albion.png"
+            },
+            {
+                "name": "래프트",
+                "url": "https://store.steampowered.com/app/648800/Raft/?l=koreana",
+                "image": "/images/raft.png"
+            }
+        ],
+        "gamer":[
+            {
+                "name": "올리올리월드",
+                "url": "https://store.privatedivision.com/ko/game/olliolli-world",
+                "image": "/images/oli.png"
+            },
+            {
+                "name": "오메가 스트라이커스",
+                "url": "https://store.steampowered.com/app/1869590/Omega_Strikers/?l=koreana",
+                "image": "/images/omega.png"
+            }
+        ]
+    }
+}
