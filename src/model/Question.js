@@ -21,8 +21,8 @@ class Question {
             list.warrior += 5;
             list.brain += 5;
         } else{
-            list.explorer += 1;
-            list.gamer += 1;
+            list.explorer += 5;
+            list.gamer += 5;
         }
         if (client.second === 'true') {
             list.fighter += 1;
@@ -49,7 +49,7 @@ class Question {
             list.brain += 1;
         }
         if (client.fifth === 'true') {
-            list.explorer += 1;
+            list.explorer += 3;
             list.gamer += 1;
             list.warrior += 1;
         } else{
@@ -64,6 +64,7 @@ class Question {
             list.brain += 1;
             list.fighter += 1;
         }
+        console.log(list)
 
         for (const genre in list) {
             if (list[genre] > maxCount) {

@@ -60,11 +60,6 @@
                 "name": "로스트아크",
                 "url": "https://lostark.game.onstove.com/Main",
                 "image": "/images/lostark.png"
-            },
-            {
-                "name": "아크 서바이벌",
-                "url": "https://store.steampowered.com/app/346110/ARK_Survival_Evolved/?l=koreana",
-                "image": "/images/ark.png"
             }
         ],
         "brain":[
