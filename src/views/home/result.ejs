@@ -1,42 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/home/result.css">
+    <link rel="stylesheet" href="/css/home/header.css">
     <title>스스 MC 합작품</title>
 </head>
 <body>
     <header>
-
-    </header>
-    <div class="container">
-        <h3>당신의 유형은</h3>
-        <h4><%= results.typeDescription %></h4>
-        <h1><%= results.type %></h1>
-        <span class="description">
-            <h3>설명</h3>
-            <%= results.description %>
-        </span>
-        <div class="related">
-            <h3>관련 게임</h3>
-            <div class="gamesWrap">
-                <% for (const key in results.related) {  %>
-                    <div class="relatedGames">
-                        <%= results.related[key].name %>
-                        <a href=<%= results.related[key].url %>>
-                            <img src= <%= results.related[key].image %> >
-                        </a>
-                    </div>
-                <% } %>
+        <div class="header-layout">
+            <a href="/">
+                <div class="logo">
+                    GOODGAME
+                </div>
+            </a>
+            <div class="header-link">
+                <a href="/genre">
+                    <div class="genre-link">장르 추천</div>
+                </a>
+                <a href="/community">
+                    <div class="community-link">커뮤니티</div>
+                </a>
             </div>
         </div>
-        <div class="btn">
-            <a href="/genre">
-                <button id="genre-btn">다시 한 번 검사하기</button>
-            </a>
+    </header>
+    <div class="layout">
+        <div class="container">
+            <h3>당신의 유형은</h3>
+            <h4><%= results.typeDescription %></h4>
+            <h1><%= results.type %></h1>
+            <span class="description">
+                <h3>설명</h3>
+                <%= results.description %>
+            </span>
+            <div class="related">
+                <h3>관련 게임</h3>
+                <div class="gamesWrap">
+                    <% for (const key in results.related) {  %>
+                        <div class="relatedGames">
+                            <%= results.related[key].name %>
+                            <a class="game-img" href=<%= results.related[key].url %>>
+                                <img src= <%= results.related[key].image %> >
+                            </a>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="/genre">
+                    <button id="genre-btn">다시 한 번 검사하기</button>
+                </a>
+            </div>
+    
         </div>
-
     </div>
 </body>
 </html>

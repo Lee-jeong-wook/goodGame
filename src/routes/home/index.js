@@ -5,6 +5,7 @@ const router = express.Router();
 
 const ctrl = require('./home.ctrl');
 
+router.get('/', ctrl.output.home)
 router.get('/genre', ctrl.output.genre)
 router.get('/result', ctrl.output.result)
 

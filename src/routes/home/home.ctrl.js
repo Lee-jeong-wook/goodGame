@@ -1,6 +1,9 @@
 const Question = require('../../model/Question');
 
 const output = {
+    home: (req, res) => {
+        res.render('home/home.ejs')
+    },
     genre: (req, res) => {
         res.render('home/genre.ejs')
     },
