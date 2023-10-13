@@ -1,8 +1,22 @@
 const Question = require('../../model/Question');
+const Community = require('../../model/Community');
 
 const output = {
     home: (req, res) => {
-        res.render('home/home.ejs')
+        res.render('home/home.ejs');
+    },
+    commLink: (req, res) => {
+        res.render('home/commLink.ejs')
+    },
+    community: async (req, res) => {
+        const commID =  req.query.id;
+        const post = new Community(req.body);
+        const commResult = await post.community(commID);
+        console.log(commResult);
+        commResult.forEach(element => {
+            console.log(element.title)
+        });
+        res.render('home/comm.ejs',{commResult})
     },
     genre: (req, res) => {
         res.render('home/genre.ejs')

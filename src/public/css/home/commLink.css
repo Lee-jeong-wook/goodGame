@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.link-layout{
+    width: 70%;
+
+}
+.link-contents{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    background-color: #555;
+    padding: 0px 10px;
+}
+.link-contents > a{
+    color: #ddd;
+}

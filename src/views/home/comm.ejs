@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home/header.css">
+    <link rel="stylesheet" href="./css/home/comm.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-layout">
+            <a href="/">
+                <div class="logo">
+                    GOODGAME
+                </div>
+            </a>
+            <div class="header-link">
+                <a href="/genre">
+                    <div class="genre-link">장르 추천</div>
+                </a>
+                <a href="/communities">
+                    <div class="community-link">커뮤니티</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="contents-layout">
+            <a href="#">
+                <button class="create">
+                    게시물 추가
+                </button>
+            </a>
+            <% commResult.forEach(element => { %>
+                <div class="post">
+                    <a href=<%= element.id %>>
+                        <div class="title"><%= element.title %></div>
+                        <span class="ID"><%= element.name %></span>
+                    </a>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>
